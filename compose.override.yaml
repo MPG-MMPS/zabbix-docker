@@ -1,5 +1,6 @@
 services:
  zabbix-agent:
   extends:
+   file: compose_zabbix_components.yaml
    service: agent2
   image: "${ZABBIX_AGENT2_IMAGE}:${ZABBIX_ALPINE_IMAGE_TAG}${ZABBIX_IMAGE_TAG_POSTFIX}"
